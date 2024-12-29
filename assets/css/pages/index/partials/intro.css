@@ -1,0 +1,47 @@
+.intro {
+  width: 100%;
+  height: 317px;
+  background: var(--gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.intro .box_texto {
+  width: 1000px;
+  height: 80px;
+  padding: 25px 114px 25px 104px;
+  background: #FFFFFF4D;
+  border-radius: 1.5rem;
+  margin: 0 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro p {
+  color: var(--primary-2);
+  font-size: 1.5rem;
+  font-family: 'font-regular';
+}
+.intro span {
+  font-size: 1.5rem;
+  color: var(--primary-3);
+  font-family: 'font-bold';
+}
+
+.intro .profissionais {
+  font-size: 1.5rem;
+  color: var(--primary-2);
+  font-family: 'font-bold';
+}
+
+.intro .seta {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  z-index: 3;
+}
