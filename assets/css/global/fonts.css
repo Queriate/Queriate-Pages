@@ -1,0 +1,11 @@
+    /* Importa a fonte */
+@font-face {
+    font-family: 'font-bold';
+    src: url(../../files/fonts/Poppins-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: 'font-regular';
+    src: url(../../files/fonts/Poppins-Regular.ttf);
+}
