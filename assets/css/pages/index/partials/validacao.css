@@ -1,0 +1,48 @@
+.validacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background: var(--primary-3);
+}
+
+.validacao .box {
+  color: var(--primary-2);
+  font-family: 'font-regular';
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.validacao .experiencia {
+  background: var(--gradient);
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+
+.validacao .verificado {
+  position: absolute;
+  bottom: -27%;
+}
+
+.validacao .praticas {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+
+.validacao .seta {
+  position: absolute;
+  bottom: -26%;
+}
+
+.validacao .entendimento {
+  background: var(--gradient);
+  width: 100%;
+  height: 140px;
+}
