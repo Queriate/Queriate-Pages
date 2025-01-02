@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'font-regular';
     font-size: 62.5%;
     text-decoration: none;
+}
+
+html {
+    width: 75%;
+    margin: 0 auto;
+    background: var(--primary-3);
 }
 
 a {
