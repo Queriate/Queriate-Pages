@@ -149,7 +149,7 @@ a.link_wpp {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1025px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
   .topo {
     flex-direction: row;
@@ -167,6 +167,45 @@ a.link_wpp {
     position: absolute;
     left: 13.9rem;
     bottom: 15%;
+  }
+
+  .topo .titulos_CTA h1 {
+    text-align: left;
+    margin: 0 0 9rem 0;
+  }
+
+  .img_cell {
+    position: relative;
+    margin: 13.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .topo {
+    flex-direction: row;
+    justify-content: end;
+    height: 91dvh;
+    background: url(../../../../files/imgs/bg.png) center no-repeat;
+    background-size: cover;
+  }
+
+  .topo .titulos_CTA {
+    width: 34%;
+    height: 35rem;
+    justify-content: start;
+    align-items: flex-start;
+    position: absolute;
+    left: 13.9rem;
+    bottom: 15%;
+  }
+
+  .topo .titulos_CTA h1 {
+    line-height: 2rem;
+  }
+  
+  .topo .titulos_CTA p {
+    line-height: 1.5rem;
   }
 
   .topo .titulos_CTA h1 {
