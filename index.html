@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/pages/index/index.css">
   <title>Queriate Pages</title>
 </head>
@@ -17,16 +19,46 @@
       <div class="titulos_CTA">
         <h1>Transforme sua Presença Online <br> em uma <span>Ferramenta Poderosa <br> de Conexão e Credibilidade</span>
         </h1>
-        <p>Landpages personalizadas para destacar sua <br> profissão e aumentar sua autoridade na web.</p>
+        <p>Landpages personalizadas para destacar sua profissão e aumentar sua autoridade na web.</p>
         <button> <img src="assets/files/imgs/mensagem_fig 1.png" alt="icone mensagem"> <a href="">Quero minha landpage
             profissional!</a></button>
       </div>
 
       <div class="img_cell">
-        <img src="assets/files/imgs/celulares.png" alt="pages">
+        <picture>
+          <!-- Imagem para celulares (viewport >= 320px e < 768px) -->
+          <source srcset="assets/files/imgs/celulares_mobile.svg" media="(max-width: 767px)">
+
+          <!-- Imagem padrão para tablets ou desktops -->
+          <img src="assets/files/imgs/celulares.png" alt="pages">
+        </picture>
       </div>
 
-      <img class="seta" src="assets/files/imgs/seta_fig (1).png" alt="seta para baixo">
+
+      <div class="box_seta">
+        <div class="raio_seta">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <div class="animacao">
+        <div class="barras">
+          <div class="user"><i class="fa-solid fa-user"></i></div>
+          <div class="barra"></div>
+        </div>
+
+        <div class="barras">
+          <div class="user"><i class="fa-solid fa-user"></i></div>
+          <div class="barra dif"></div>
+        </div>
+
+        <div class="barras">
+          <div class="user"><i class="fa-solid fa-user"></i></div>
+          <div class="barra"></div>
+        </div>
+      </div>
+
+
     </section> <!-- fim section topo -->
 
     <section class="intro">
@@ -135,6 +167,8 @@
       <img class="check" src="assets/files/imgs/check_fig.svg" alt="check">
     </footer> <!-- fim footer -->
   </main>
+
+  <script src="assets/js/barras.js"></script>
 </body>
 
 </html>
