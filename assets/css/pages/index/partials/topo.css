@@ -1,7 +1,7 @@
 .topo {
   display: flex;
   width: 100%;
-  height: 625px;
+  height: 91dvh;
   background: url(../../../../files/imgs/bg.png) center no-repeat;
   background-size: cover;
   position: relative;
@@ -11,12 +11,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 139px;
+  margin: 13.9rem;
 }
 
 .topo .titulos_CTA h1 {
   color: var(--primary-2);
-  font-size: 3rem;
+  font-size: clamp(1rem, 3rem, 3rem);
   font-family: 'font-bold';
   margin: 0 0 39px 0;
   line-height: 30px;
@@ -24,24 +24,24 @@
 
 .topo .titulos_CTA span {
   color: var(--primary-2);
-  font-size: 3rem;
+  font-size: clamp(1rem, 3rem, 3rem);
   font-family: 'font-bold';
   color: var(--primary-1);
 }
 
 .topo .titulos_CTA p {
   color: var(--primary-2);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5rem, 1.5rem);
   font-family: 'font-regular';
   margin: 0 0 64px 0;
 }
 
 .topo .titulos_CTA button {
-  width: 363px;
-  height: 40px;
-  border-radius: 50px ;
+  width: 70%;
+  height: 5.82dvh;
+  border-radius: 50px;
   font-family: 'font-bold';
-  font-size: 2rem;
+  font-size: clamp(1rem, 2rem, 2rem);
   background: var(--gradient);
   border: none;
   display: flex;
@@ -52,7 +52,7 @@
 }
 
 .topo .titulos_CTA button:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @keyframes pulsar {
@@ -83,4 +83,95 @@ transform: scale(1.05);
   bottom: -5.6%;
   left: 47.5%;
   z-index: 3;
+}
+
+/* Celulares medianos (verticales) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .topo {
+    display: flex;
+    width: 100%;
+    height: 80.08dvh;
+    background: url(../../../../files/imgs/bg.png) right no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .topo .titulos_CTA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .topo .titulos_CTA h1 {
+    color: var(--primary-2);
+    font-size: clamp(1rem, 3rem, 3rem);
+    font-family: 'font-bold';
+    margin: 0 0 39px 0;
+    line-height: 30px;
+  }
+
+  .topo .titulos_CTA span {
+    color: var(--primary-2);
+    font-size: clamp(1rem, 3rem, 3rem);
+    font-family: 'font-bold';
+    color: var(--primary-1);
+  }
+
+  .topo .titulos_CTA p {
+    color: var(--primary-2);
+    font-size: clamp(1rem, 1.5rem, 1.5rem);
+    font-family: 'font-regular';
+    margin: 0 0 64px 0;
+  }
+
+  .topo .titulos_CTA button {
+    width: 70%;
+    height: 5.82dvh;
+    border-radius: 50px;
+    font-family: 'font-bold';
+    font-size: clamp(1rem, 2rem, 2rem);
+    background: var(--gradient);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    transition: .5s;
+  }
+
+  .topo .titulos_CTA button:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes pulsar {
+    0% {
+      filter: brightness(1);
+    }
+
+    50% {
+      filter: brightness(1.3);
+    }
+
+    100% {
+      filter: brightness(1);
+    }
+  }
+
+  .topo .img_cell {
+    position: absolute;
+    max-width: 180px;
+    right: 35%;
+    top: 10%;
+    animation: pulsar 5s infinite ease-in-out;
+  }
+
+
+  .topo .seta {
+    position: absolute;
+    bottom: -5.6%;
+    left: 47.5%;
+    z-index: 3;
+  }
 }
