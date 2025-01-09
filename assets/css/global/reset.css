@@ -7,10 +7,14 @@
     text-decoration: none;
 }
 
-html {
-    width: 75%;
-    margin: 0 auto;
-    background: var(--primary-3);
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    html {
+        width: 85%;
+        margin: 0 auto;
+        background: var(--primary-3);
+    }
 }
 
 a {
