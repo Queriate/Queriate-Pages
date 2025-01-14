@@ -24,30 +24,6 @@
   color: var(--primary-1);
 }
 
-.proposta .box_seta {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background: var(--primary-3);
-  bottom: -6%;
-}
-
-.proposta .box_seta .raio_seta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 70%;
-  background: var(--primary-1);
-  border-radius: 50%;
-  font-size: 3.5rem;
-  color: var(--primary-2);
-}
-
 .proposta h2 {
   position: absolute;
   bottom: 15%;
