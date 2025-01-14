@@ -1,0 +1,56 @@
+.proposta {
+  width: 100%;
+  height: clamp(45dvh, 55dvw, 60dvh);
+  background: var(--primary-3);
+  color: var(--primary-2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 5% 0 5%;
+  position: relative;
+}
+
+.proposta p {
+  font-size: clamp(1.3rem, 1.5vw, 2.5rem);
+  min-width: 291.63px;
+  max-width: 350px;
+}
+
+.proposta span {
+  font-size: clamp(1.3rem, 1.5vw, 2.5rem);
+  color: var(--primary-1);
+}
+
+.proposta .box_seta {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: var(--primary-3);
+  bottom: -6%;
+}
+
+.proposta .box_seta .raio_seta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  background: var(--primary-1);
+  border-radius: 50%;
+  font-size: 3.5rem;
+  color: var(--primary-2);
+}
+
+.proposta h2 {
+  position: absolute;
+  bottom: 15%;
+
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
