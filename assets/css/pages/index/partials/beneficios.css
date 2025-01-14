@@ -1,0 +1,49 @@
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90dvh;
+  background: var(--gradient);
+  position: relative;
+  gap: 1rem;
+  padding: 5.5rem;
+}
+
+.beneficios .box_beneficio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 50rem;
+  height: 16.69dvh;
+  background: var(--primary-4);
+  color: var(--primary-3);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios .box_beneficio .foco {
+  font-weight: bold;
+  font-size: clamp(1.2rem, 1.5vw, 2rem);
+  color: var(--primary-2);
+  margin-bottom: 1rem;
+}
+
+.beneficios .box_beneficio p {
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.beneficios h2 {
+  margin-top: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  color: var(--primary-2);
+  text-align: center;
+  position: absolute;
+  bottom: 3.5%;
+}
