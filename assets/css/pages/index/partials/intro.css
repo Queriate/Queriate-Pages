@@ -8,17 +8,25 @@
   height: 35dvh;
   background: var(--gradient);
   padding: 2rem;
+  gap: 1rem;
+}
+
+.intro .box_texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-4);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  max-width: 100%;
+  height: 80px;
 }
 
 .intro .box_texto p {
-  background: var(--primary-4);
   color: var(--primary-2);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
   font-size: clamp(1rem, 1vw, 2rem);
   line-height: 1.2rem;
   text-align: center;
-  max-width: 100%;
 }
 
 .intro .box_texto span {
